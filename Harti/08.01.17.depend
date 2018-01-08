@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1515412517 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test\harti\main.cpp
+	<iostream>
+	"GSKIContainer.h"
+
+1515412282 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test\harti\gskicontainer.cpp
+	"GSKIContainer.h"
+
+1515411836 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test\harti\gskicontainer.h
+
