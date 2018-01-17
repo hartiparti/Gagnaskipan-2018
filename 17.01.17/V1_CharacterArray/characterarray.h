@@ -42,6 +42,7 @@ class CharacterArray
          char *Array;
          int size_of_array;
          int current_capacity;
+         int current_position;
 
          void resizeArray();
 

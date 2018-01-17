@@ -2,24 +2,21 @@
 
 CharacterArray::CharacterArray()
 {
-    ///TODO: Implement
     current_capacity = INITIAL_CAPACITY;
     Array = new char[current_capacity];
-    //Array[0] = '\0';
+    Array[0] = '\0';
     size_of_array = 0;
 
 }
 
 CharacterArray::CharacterArray(char* str, int length)
 {
-    ///TODO: Implement
     size_of_array = length;
 
     current_capacity = INITIAL_CAPACITY;
     Array = new char[current_capacity];
 
-    resizeArray();  /// Stækka til að taka inn streng.
-
+    resizeArray();
     for(int i = 0; i < length; i++)
     {
         Array[i] = str[i];
@@ -30,12 +27,12 @@ CharacterArray::CharacterArray(char* str, int length)
 
 CharacterArray::~CharacterArray()
 {
-    ///TODO: Implement
     delete[] Array;
 }
 
-void CharacterArray::resizeArray()          /// Mitt fall til thess ad staekka Array, bara upp í helming af tempArray;
+void CharacterArray::resizeArray()
 {
+
     current_capacity *= 2;
     char *tempArray = new char[current_capacity];
 
@@ -53,131 +50,134 @@ void CharacterArray::resizeArray()          /// Mitt fall til thess ad staekka A
 
 void CharacterArray::append(char c)
 {
-
-    ///TODO: Implement                                      /// Á að appenda char c við Array,
     if (size_of_array >= current_capacity)
     {
         resizeArray();
     }
 
-    int index = size_of_array - 1;
-  /* while(index >=0)
-    {
-        if(Array[index] > c)
-        {
-            Array[index + 1] = Array[index];
-            index--;
-        }
-        else
-        {
-            index;
-            break;
-        }
-    }
-    */
-    Array[index+1] = c;
-    size_of_array++;
+    Array[size_of_array++] = c;
+
 }
 
 void CharacterArray::insert(char c, int index)
 {
-    char inserted_character = c;                                    /// Á að inserta char c við Array, þarf að kasta exceptions.
-    ///TODO: Implement
-
-
-        if(index == 0)
+    char inserted_character = c;
+    if (index >= size_of_array)
         {
-            Array[index] = inserted_character;
-            size_of_array++;
-
-        }
-
-        if (index == size_of_array)
-        {
-
-          index = size_of_array - 1;
-          Array[index] = c;
-          size_of_array++;
-
-        /*for(int i = size_of_array; i > index; i--)
-        {
-            Array[i] = Array[i-1];
-        }
-            Array[index] = inserted_character;
-            */
-
-        }
-
-    else
-    {
-
             throw IndexOutOfBoundsException();
+        }
+    else
+        {
+            char first;
+            size_of_array++;
+            cout << size_of_array;
+            if (size_of_array == current_capacity)
+            {
+                resizeArray();
+                for (int i = 0; i < size_of_array; i++)
+                {
 
-    }
+                    first = Array[i];
+                    Array[i] = inserted_character;
+                    inserted_character = first;
+                }
+
+            }
+            else
+            {
+
+                append(inserted_character);
+
+            }
 
 
+        }
 }
 
 void CharacterArray::setAt(char c, int index)
 {
 
-    ///TODO: Implement
-
+    if (index >= size_of_array || index < 0)
+    {
+        throw IndexOutOfBoundsException();
+    }
+    else
+    {
+        Array[index] =  c;
+    }
 
 }
 
 char CharacterArray::getAt(int index)
 {
+    int value = 0;
 
-    ///TODO: Implement
-    return '\0'; //change or remove this line
+    if(index > size_of_array && index < 0)
+    {
+        throw IndexOutOfBoundsException();
+    }
+    else
+    {
+
+        value = Array[index];
+
+    }
+
+    return value;
 }
 
 char CharacterArray::pop_back()
 {
-
-    //Example of throwing an exception
-    if(isEmpty()) {
+    if(isEmpty())
+    {
         throw EmptyException();
     }
-
-    ///TODO: Implement
-    return '\0'; //change or remove this line
+    else
+    {
+        char temp = Array[size_of_array - 1];
+        size_of_array--;
+        return temp;
+    }
 }
 
 char CharacterArray::removeAt(int index)
 {
+    char temp = index;
 
-   ///TODO: Implement
-    for (int i = index; i < size_of_array; i++)
+    if(index > size_of_array && index < 0)
     {
-        Array[index] = Array[index + 1];
-        Array[size_of_array - 1] = 0;
+        throw IndexOutOfBoundsException();
     }
-    return index; //change or remove this line
+    else
+    {
+        for (int i = index; i < size_of_array; i++)
 
+        Array[i] = Array[i + 1];
+        Array[size_of_array] = 0;
+        size_of_array--;
+    }
+
+    return temp;
 }
 
 void CharacterArray::clear()
 {
-    ///TODO: Implement
     for(int i = 0; i < size_of_array; i++)
     {
         Array[i] = '\0';
         size_of_array = 0;
     }
-
 }
 
 int CharacterArray::length()
 {
-    return size_of_array;                       /// Length = size_of_array
+    return size_of_array;
 }
 
 bool CharacterArray::isEmpty()
 {
-    bool checkEmpty = false;                    /// Checka hvort hann sé empty
-    if (size_of_array == 0)                             /// Ef að fylkið er == 0, þá er checkEmpty True;
+    bool checkEmpty = false;
+    if (size_of_array == 0)
     {
         checkEmpty = true;
 
@@ -186,25 +186,19 @@ bool CharacterArray::isEmpty()
     {
         return true;
     }
-   else
-   {
+    else
+    {
        return false;
-   }
-
-
+    }
 }
 
 char* CharacterArray::substring(int startIndex, int length)
 {
-
-    ///TODO: Implement
     return NULL; //change or remove this line
 }
 
 ostream& operator <<(ostream& out, const CharacterArray& ca)
 {
-
-    ///TODO: Implement
     if (ca.size_of_array == 0)
     {
         out << " ";
@@ -216,6 +210,6 @@ ostream& operator <<(ostream& out, const CharacterArray& ca)
             out << ca.Array[i];
         }
     }
-
     return out;
 }
+
