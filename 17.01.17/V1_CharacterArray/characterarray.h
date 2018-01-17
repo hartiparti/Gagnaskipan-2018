@@ -1,7 +1,7 @@
 #ifndef INSERTSORTEDARRAY_H
 #define INSERTSORTEDARRAY_H
 
-#include <ostream>
+#include <iostream>
 
 using namespace std;
 
