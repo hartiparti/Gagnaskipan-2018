@@ -115,7 +115,12 @@ char CharacterArray::removeAt(int index)
 {
 
     ///TODO: Implement
-    return '\0'; //change or remove this line
+    for (int i = index; i < size_of_array; i++)
+    {
+        Array[index] = Array[index + 1];
+        Array[size_of_array - 1] = 0;
+    }
+    return index; //change or remove this line
 }
 
 void CharacterArray::clear()
