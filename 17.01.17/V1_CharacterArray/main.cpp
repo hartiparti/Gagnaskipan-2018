@@ -131,13 +131,33 @@ int main() {
 
     printArray(ca1);
 
-    append(ca1, 'k');
+    insertIntoArray(ca1, 'a', 1);
     insertIntoArray(ca1, 'a', 0);
+    insertIntoArray(ca1, 'b', 1);
+    insertIntoArray(ca1, 'c', 0);
+    insertIntoArray(ca1, 'd', 4);
+    /*
+    append(ca1, 'k');
+    append(ca1, 'b');
+    append(ca1, 'd');
+    append(ca1, 'b');
+
+    append(ca1, 'a');
+
+
+    insertIntoArray(ca1, 'a', 1);
+
+    insertIntoArray(ca1, 'a', 0);
+
+    insertIntoArray(ca1, 'b', 1);
+
+/*
     setAt(ca1, 'j', 1);
     getAt(ca1, 1);
     insertIntoArray(ca1, 'r', 1);
     popFromArray(ca1);
     removeAt(ca1, 0);
+    */
 
     clearArray(ca1);
     clearArray(ca1);

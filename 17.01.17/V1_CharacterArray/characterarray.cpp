@@ -5,7 +5,7 @@ CharacterArray::CharacterArray()
     ///TODO: Implement
     current_capacity = INITIAL_CAPACITY;
     Array = new char[current_capacity];
-    Array[0] = '/0';
+    //Array[0] = '\0';
     size_of_array = 0;
 
 }
@@ -39,7 +39,7 @@ void CharacterArray::resizeArray()          /// Mitt fall til thess ad staekka A
     current_capacity *= 2;
     char *tempArray = new char[current_capacity];
 
-    for(int i = 0; i < current_capacity / 2; i++)
+    for(int i = 0; i < current_capacity; i++)
     {
         tempArray[i] = Array[i];
     }
@@ -61,7 +61,7 @@ void CharacterArray::append(char c)
     }
 
     int index = size_of_array - 1;
-    while(index >=0)
+  /* while(index >=0)
     {
         if(Array[index] > c)
         {
@@ -74,7 +74,7 @@ void CharacterArray::append(char c)
             break;
         }
     }
-
+    */
     Array[index+1] = c;
     size_of_array++;
 }
@@ -83,22 +83,38 @@ void CharacterArray::insert(char c, int index)
 {
     char inserted_character = c;                                    /// Á að inserta char c við Array, þarf að kasta exceptions.
     ///TODO: Implement
-    if(index == 0)
-    {
-         Array[index+1] = inserted_character;
-         size_of_array++;
 
-    }
 
-    else
-    {
-        for(int i = size_of_array; i > index; i--)
+        if(index == 0)
+        {
+            Array[index] = inserted_character;
+            size_of_array++;
+
+        }
+
+        if (index == size_of_array)
+        {
+
+          index = size_of_array - 1;
+          Array[index] = c;
+          size_of_array++;
+
+        /*for(int i = size_of_array; i > index; i--)
         {
             Array[i] = Array[i-1];
         }
-        Array[index] = inserted_character;
+            Array[index] = inserted_character;
+            */
+
+        }
+
+    else
+    {
+
+            throw IndexOutOfBoundsException();
 
     }
+
 
 }
 
@@ -193,9 +209,13 @@ ostream& operator <<(ostream& out, const CharacterArray& ca)
     {
         out << " ";
     }
-    for (int i = 0; i < ca.size_of_array; i++)
+    else
     {
-        out << ca.Array[i] << " ";
+        for (int i = 0; i < ca.size_of_array; i++)
+        {
+            out << ca.Array[i];
+        }
     }
+
     return out;
 }
