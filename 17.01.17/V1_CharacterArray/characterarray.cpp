@@ -53,7 +53,7 @@ void CharacterArray::resizeArray()          /// Mitt fall til thess ad staekka A
 void CharacterArray::append(char c)
 {
 
-    ///TODO: Implement
+    ///TODO: Implement                                      /// Á að appenda char c við Array,
     if (size_of_array >= current_capacity)
     {
         resizeArray();
@@ -80,8 +80,25 @@ void CharacterArray::append(char c)
 
 void CharacterArray::insert(char c, int index)
 {
-
+    char inserted_character = c;                                    /// Á að inserta char c við Array, þarf að kasta exceptions.
     ///TODO: Implement
+    if(index == 0)
+    {
+         Array[index+1] = inserted_character;
+         size_of_array++;
+
+    }
+
+    else
+    {
+        for(int i = size_of_array; i > index; i--)
+        {
+            Array[i] = Array[i-1];
+        }
+        Array[index] = inserted_character;
+
+    }
+
 }
 
 void CharacterArray::setAt(char c, int index)
@@ -131,15 +148,13 @@ void CharacterArray::clear()
 
 int CharacterArray::length()
 {
-
-    ///TODO: Implement
-    return size_of_array;
+    return size_of_array;                       /// Length = size_of_array
 }
 
 bool CharacterArray::isEmpty()
 {
-    bool checkEmpty = false;
-    if (Array == 0)
+    bool checkEmpty = false;                    /// Checka hvort hann sé empty
+    if (size_of_array == 0)                             /// Ef að fylkið er == 0, þá er checkEmpty True;
     {
         checkEmpty = true;
 
