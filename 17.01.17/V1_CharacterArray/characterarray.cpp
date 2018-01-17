@@ -5,6 +5,7 @@ CharacterArray::CharacterArray()
     ///TODO: Implement
     current_capacity = INITIAL_CAPACITY;
     Array = new char[current_capacity];
+    Array[0] = '/0';
     size_of_array = 0;
 
 }
@@ -131,19 +132,25 @@ char CharacterArray::pop_back()
 char CharacterArray::removeAt(int index)
 {
 
-    ///TODO: Implement
+   ///TODO: Implement
     for (int i = index; i < size_of_array; i++)
     {
         Array[index] = Array[index + 1];
         Array[size_of_array - 1] = 0;
     }
     return index; //change or remove this line
+
 }
 
 void CharacterArray::clear()
 {
-
     ///TODO: Implement
+    for(int i = 0; i < size_of_array; i++)
+    {
+        Array[i] = '\0';
+        size_of_array = 0;
+    }
+
 }
 
 int CharacterArray::length()
