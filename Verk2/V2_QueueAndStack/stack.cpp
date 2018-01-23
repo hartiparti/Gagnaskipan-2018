@@ -46,8 +46,9 @@ Measurement Stack::pop()
         Node * temp;
         temp = head;
         head = head -> next;
-        delete temp;
+
         Measurement RetVal = temp->value;
+        delete temp;
         return RetVal;
     }
 

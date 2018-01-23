@@ -38,7 +38,7 @@
 	"stack.h"
 	"queue.h"
 
-1516717552 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\main.cpp
+1516720659 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\main.cpp
 	<iostream>
 	"stack.h"
 	"queue.h"
@@ -63,9 +63,9 @@
 	<iostream>
 	"stack.h"
 
-1516719515 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\queue.cpp
+1516720634 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\queue.cpp
 	"queue.h"
 
-1516719254 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\stack.cpp
+1516719675 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\stack.cpp
 	"stack.h"
 

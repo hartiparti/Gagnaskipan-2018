@@ -45,11 +45,11 @@ Measurement Queue::remove()
     }
     else
     {
-        Node * temp;
-        temp = head;
+        Node * node;
+        node = head;
         head = head -> next;
-        delete temp;
-        Measurement RetVal = temp->value;
+        Measurement RetVal = node->value;
+        delete node;
         return RetVal;
     }
 }
