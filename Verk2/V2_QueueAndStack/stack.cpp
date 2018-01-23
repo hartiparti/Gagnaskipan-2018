@@ -18,7 +18,6 @@ Stack::~Stack()
         delete temp;
         temp = next;
     }
-
 }
 
 void Stack::push(Measurement value)
@@ -32,7 +31,6 @@ void Stack::push(Measurement value)
     {
         node -> next = head;
     }
-
     head = node;
     itemCount++;
 }
@@ -75,7 +73,6 @@ bool Stack::isEmpty()
 
 ostream& operator << (ostream& out, Stack &s)
 {
-
     for (Node* node = s.head; node!= NULL; node = node->next)
     {
         out << node->value << " ";

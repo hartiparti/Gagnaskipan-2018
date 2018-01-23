@@ -12,18 +12,17 @@ class Queue
         Queue();
         ~Queue();
 
-       void add(Measurement value);
-       Measurement remove();
+        void add(Measurement value);
+        Measurement remove();
 
-       int size();
-       bool isEmpty();
-
-       friend ostream& operator << (ostream& out, Queue& q );
+        int size();
+        bool isEmpty();
+        friend ostream& operator << (ostream& out, Queue& q );
 
     private:
+        int itemCount;
         Node *tail;
         Node *head;
-        int itemCount;
 };
 
 #endif // QUEUE_H

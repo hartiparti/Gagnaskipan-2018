@@ -26,7 +26,7 @@ void Queue::add(Measurement value)
     node -> next = NULL;
     if(tail== NULL)
     {
-    head = node;
+        head = node;
         tail = node;
     }
     else
@@ -39,7 +39,8 @@ void Queue::add(Measurement value)
 Measurement Queue::remove()
 {
     itemCount--;
-    if(isEmpty()) {
+    if(isEmpty())
+    {
         throw EmptyException();
     }
     else
@@ -74,10 +75,10 @@ bool Queue::isEmpty()
 }
 
 ostream& operator << (ostream& out, Queue& q )
- {
+{
     for (Node* node = q.head; node!= NULL; node = node->next)
     {
         out << node->value << " ";
     }
-   return out;
- }
+    return out;
+}
