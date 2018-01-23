@@ -1,6 +1,5 @@
 #include "stack.h"
 
-
 Stack::Stack()
 {
     itemCount = 0;
@@ -37,20 +36,24 @@ void Stack::push(Measurement value)
 
 Measurement Stack::pop()
 {
-    itemCount--;
+
     if(isEmpty()) {
         throw EmptyException();
     }
     else
     {
+        Node *node;
+        node = head->next;
         Node * temp;
         temp = head;
         head = head -> next;
 
         Measurement RetVal = temp->value;
         delete temp;
+        itemCount--;
         return RetVal;
     }
+
 
 }
 int Stack::size()
@@ -60,8 +63,8 @@ int Stack::size()
 
 bool Stack::isEmpty()
 {
-    Node *node;
-    node = head->next;
+   Node *node;
+   node = head;
     if(node == NULL)
     {
         return true;

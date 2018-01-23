@@ -38,18 +38,19 @@ void Queue::add(Measurement value)
 
 Measurement Queue::remove()
 {
-    itemCount--;
     if(isEmpty())
     {
         throw EmptyException();
     }
     else
     {
-        Node * node;
-        node = head;
+        Node * temp;
+        temp = head;
         head = head -> next;
-        Measurement RetVal = node->value;
-        delete node;
+
+        Measurement RetVal = temp->value;
+        delete temp;
+        itemCount--;
         return RetVal;
     }
 }
@@ -61,6 +62,7 @@ int Queue::size()
 
 bool Queue::isEmpty()
 {
+    Node *node;
     if(head == NULL)
     {
         return true;
@@ -72,6 +74,7 @@ bool Queue::isEmpty()
         node = node -> next;
         return false;
     }
+
 }
 
 ostream& operator << (ostream& out, Queue& q )
