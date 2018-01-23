@@ -75,10 +75,10 @@ bool Stack::isEmpty()
 
 ostream& operator << (ostream& out, Stack &s)
 {
-    Node* node = s.head;
-    for (node; node!= NULL; node = node->next)
+
+    for (Node* node = s.head; node!= NULL; node = node->next)
     {
         out << node->value << " ";
-        return out;
     }
+    return out;
 }

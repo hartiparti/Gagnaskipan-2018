@@ -12,7 +12,7 @@ class Node
         Node(Measurement param) : value(param), next(NULL) {};
         Node(Measurement param, Node *next) : value(param), next(next){};
 
-        virtual ~Node(){};
+        ~Node(){};
         Measurement value;
         Node *next;
 

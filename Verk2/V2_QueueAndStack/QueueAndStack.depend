@@ -38,3 +38,34 @@
 	"stack.h"
 	"queue.h"
 
+1516717552 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\main.cpp
+	<iostream>
+	"stack.h"
+	"queue.h"
+
+1516711171 c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\stack.h
+	"measurement.h"
+	"Node.h"
+	<iostream>
+
+1516658917 c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\measurement.h
+	<ostream>
+	<string>
+
+1516719116 c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\node.h
+	<iostream>
+	"measurement.h"
+	<stdlib.h>
+
+1516717654 c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\queue.h
+	"measurement.h"
+	"Node.h"
+	<iostream>
+	"stack.h"
+
+1516719233 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\queue.cpp
+	"queue.h"
+
+1516719254 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\verk2\v2_queueandstack\stack.cpp
+	"stack.h"
+
