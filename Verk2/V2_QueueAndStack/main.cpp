@@ -39,7 +39,7 @@ void clearStack(Stack &s) {
     cout << "stack size: " << s.size() << endl;
     cout << endl;
 }
-/*
+
 void addToQueue(Queue &q, string name, double value) {
 
     cout << "adding measurement to queue: name: " << name << ", value: " << value << endl;
@@ -74,7 +74,7 @@ void clearQueue(Queue &q) {
     cout << "queue size: " << q.size() << endl;
     cout << endl;
 }
-*/
+
 int main() {
 
     cout << endl << "STACK" << endl << endl;
@@ -97,7 +97,7 @@ int main() {
 
 
     cout << endl << "QUEUE" << endl << endl;
-/*
+
     Queue q1;
     addToQueue(q1, "kari", 79.2);
     addToQueue(q1, "beggi", 91.3);
@@ -112,7 +112,7 @@ int main() {
     removeFromQueue(q1);
     removeFromQueue(q1);
 
-*/
+
     cout << endl << "EMPTY CHECK" << endl << endl;
 
     Stack s2;
@@ -123,7 +123,7 @@ int main() {
     pushOntoStack(s2, "eee", 55.5);
 
     clearStack(s2);
-/*
+
     Queue q2;
     addToQueue(q2, "aaa", 11.1);
     addToQueue(q2, "bbb", 22.2);
@@ -132,7 +132,7 @@ int main() {
     addToQueue(q2, "eee", 55.5);
 
     clearQueue(q2);
-*/
+
 
     return 0;
 }

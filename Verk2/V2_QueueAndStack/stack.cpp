@@ -11,42 +11,45 @@ Stack::Stack()
 Stack::~Stack()
 {
     Node *temp;
-    while(head!= NULL)
+    temp = head;
+    while(temp != NULL)
     {
-        temp = head;
-        head = head->next;
+        Node *next = temp -> next;
         delete temp;
-
+        temp = next;
     }
+
 }
 
 void Stack::push(Measurement value)
 {
     Node *node = new Node(value, head);
-    if (head == NULL)
+    if(head == NULL)
     {
-        tail = head;
+        node -> next = NULL;
+    }
+    else
+    {
+        node -> next = head;
     }
 
-    node -> value;
-    node -> next = head;
     head = node;
     itemCount++;
 }
 
 Measurement Stack::pop()
 {
-    Node *temp;
+    itemCount--;
     if(isEmpty()) {
         throw EmptyException();
     }
     else
     {
+        Node * temp;
         temp = head;
         head = head -> next;
-        Measurement RetVal = temp->value;
-        itemCount--;
         delete temp;
+        Measurement RetVal = temp->value;
         return RetVal;
     }
 
@@ -62,7 +65,6 @@ bool Stack::isEmpty()
     node = head->next;
     if(node == NULL)
     {
-        delete node;
         return true;
     }
     else

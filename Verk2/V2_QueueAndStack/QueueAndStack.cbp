@@ -31,8 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="List.cpp" />
-		<Unit filename="List.h" />
 		<Unit filename="Node.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="measurement.h" />

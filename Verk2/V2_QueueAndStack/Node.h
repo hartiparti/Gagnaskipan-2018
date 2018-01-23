@@ -20,7 +20,7 @@ class Node
     protected:
 
     private:
-    //Measurement m(string name, double value);
+
 };
 
 #endif // NODE_H

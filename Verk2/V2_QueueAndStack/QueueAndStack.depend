@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1516710302 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\queue.cpp
+1516717864 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\queue.cpp
 	"queue.h"
 
-1516710284 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\queue.h
+1516717654 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\queue.h
 	"measurement.h"
 	"Node.h"
 	<iostream>
+	"stack.h"
 
-1516711803 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\stack.cpp
+1516718211 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\stack.cpp
 	"stack.h"
 
 1516711171 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\stack.h
@@ -27,12 +28,12 @@
 	<ostream>
 	<string>
 
-1516666095 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\node.h
+1516718235 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\node.h
 	<iostream>
 	"measurement.h"
 	<stdlib.h>
 
-1516666563 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\main.cpp
+1516717552 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\verkefni2\v2_queueandstack\main.cpp
 	<iostream>
 	"stack.h"
 	"queue.h"
