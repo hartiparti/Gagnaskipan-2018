@@ -79,20 +79,6 @@ int main() {
 
     cout << endl << "STACK" << endl << endl;
 
-    Stack s1;
-
-    pushOntoStack(s1, "kari", 79.2);
-    pushOntoStack(s1, "beggi", 91.3);
-    pushOntoStack(s1, "kalli", 87.6);
-    pushOntoStack(s1, "valdi", 117.4);
-    pushOntoStack(s1, "anna", 54.2);
-
-    popOffStack(s1);
-    popOffStack(s1);
-    popOffStack(s1);
-    popOffStack(s1);
-    popOffStack(s1);
-    popOffStack(s1);
 
 
 
@@ -101,6 +87,8 @@ int main() {
     Queue q1;
 
     addToQueue(q1, "kari", 79.2);
+    removeFromQueue(q1);
+    clearQueue(q1);
     addToQueue(q1, "beggi", 91.3);
     addToQueue(q1, "kalli", 87.6);
     addToQueue(q1, "valdi", 117.4);
@@ -117,23 +105,7 @@ int main() {
 
     cout << endl << "EMPTY CHECK" << endl << endl;
 
-    Stack s2;
-    pushOntoStack(s2, "aaa", 11.1);
-    pushOntoStack(s2, "bbb", 22.2);
-    pushOntoStack(s2, "ccc", 33.3);
-    pushOntoStack(s2, "ddd", 44.4);
-    pushOntoStack(s2, "eee", 55.5);
 
-    clearStack(s2);
-
-    Queue q2;
-    addToQueue(q2, "aaa", 11.1);
-    addToQueue(q2, "bbb", 22.2);
-    addToQueue(q2, "ccc", 33.3);
-    addToQueue(q2, "ddd", 44.4);
-    addToQueue(q2, "eee", 55.5);
-
-    clearQueue(q2);
 
 
 

@@ -62,7 +62,6 @@ int Queue::size()
 
 bool Queue::isEmpty()
 {
-    Node *node;
     if(head == NULL)
     {
         return true;

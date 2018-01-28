@@ -42,8 +42,7 @@ Measurement Stack::pop()
     }
     else
     {
-        Node *node;
-        node = head->next;
+
         Node * temp;
         temp = head;
         head = head -> next;
