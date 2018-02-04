@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1517247643 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\templates\templates\main.cpp
+	<iostream>
+	"Fruit.h"
+
+1517247958 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\templates\templates\fruit.cpp
+	"Fruit.h"
+
+1517247847 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\templates\templates\fruit.h
+	<string>
+	<ostream>
+

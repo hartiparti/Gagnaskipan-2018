@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1495706371 source:c:\kennsla\gagnaskipan\exams\vor2017endurtekt_solutions\characterarray\characterarray.cpp
+	"characterarray.h"
+
+1495647021 c:\kennsla\gagnaskipan\exams\vor2017endurtekt_solutions\characterarray\characterarray.h
+	<ostream>
+
+1495707739 source:c:\kennsla\gagnaskipan\exams\vor2017endurtekt_solutions\characterarray\main.cpp
+	<iostream>
+	"characterarray.h"
+
+1516185386 source:c:\kennsla\gagnaskipan\projects\solutions\v1_characterarray\characterarray.cpp
+	"characterarray.h"
+
+1516185374 c:\kennsla\gagnaskipan\projects\solutions\v1_characterarray\characterarray.h
+	<ostream>
+
+1516102796 source:c:\kennsla\gagnaskipan\projects\solutions\v1_characterarray\main.cpp
+	<iostream>
+	"characterarray.h"
+
+1516185386 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\lausnir\v1_characterarray_solution\v1_characterarray\characterarray.cpp
+	"characterarray.h"
+
+1516185374 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\lausnir\v1_characterarray_solution\v1_characterarray\characterarray.h
+	<ostream>
+
+1516102796 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\lausnir\v1_characterarray_solution\v1_characterarray\main.cpp
+	<iostream>
+	"characterarray.h"
+

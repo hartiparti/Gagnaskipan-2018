@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1517160451 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\list.cpp
+	"list.h"
+	"valueclass.h"
+
+1517160238 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\list.h
+	<iostream>
+	"node.h"
+
+1517160810 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\main.cpp
+	<iostream>
+	"list.h"
+	"valueclass.h"
+
+1517156753 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\valueclass.cpp
+	"valueclass.h"
+
+1517159235 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\valueclass.h
+	<iostream>
+
+1517159255 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\node.h
+	"valueclass.h"
+

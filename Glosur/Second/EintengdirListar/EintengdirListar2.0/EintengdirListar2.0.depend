@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1516640770 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\eintengdirlistar\eintengdirlistar2.0\list.cpp
+	"List.h"
+
+1516640408 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\eintengdirlistar\eintengdirlistar2.0\list.h
+	"Node.h"
+
+1516639602 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\eintengdirlistar\eintengdirlistar2.0\node.h
+	<stdlib.h>
+	<iostream>
+
+1516639603 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\eintengdirlistar\eintengdirlistar2.0\node.cpp
+	"Node.h"
+
+1516640820 source:c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\eintengdirlistar\eintengdirlistar2.0\main.cpp
+	"List.h"
+	<iostream>
+
