@@ -21,3 +21,18 @@
 1517159255 c:\users\hartmann14\desktop\vor2018-skewl\gagnaskipan sc-t-201-gski\test frá kennara\tvítengdirlistar\nodeskari\node.h
 	"valueclass.h"
 
+1517160810 source:c:\users\hartmann14\documents\github\gagnaskipan-2018\glosur\tvítengdirlistar\nodeskari\main.cpp
+	<iostream>
+	"list.h"
+	"valueclass.h"
+
+1517160238 c:\users\hartmann14\documents\github\gagnaskipan-2018\glosur\tvítengdirlistar\nodeskari\list.h
+	<iostream>
+	"node.h"
+
+1517159255 c:\users\hartmann14\documents\github\gagnaskipan-2018\glosur\tvítengdirlistar\nodeskari\node.h
+	"valueclass.h"
+
+1517159235 c:\users\hartmann14\documents\github\gagnaskipan-2018\glosur\tvítengdirlistar\nodeskari\valueclass.h
+	<iostream>
+
