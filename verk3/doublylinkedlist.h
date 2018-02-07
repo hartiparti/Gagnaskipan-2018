@@ -34,6 +34,7 @@ class DoublyLinkedList {
                 head = currNode;
             }
                 delete tail;
+
         }
 
 
@@ -62,33 +63,36 @@ class DoublyLinkedList {
         void append(const T& item)
         {
             ListNode<T> *node = new ListNode<T>(item, tail->prev, tail);
+
             if(currNode == tail)
             {
                 insert(item);
+
             }
             else
             {
-                currNode->next->prev = node;
-                currNode->next = node;
 
+                node->prev->next = node;
+                tail->prev = node;
                 currentPosition++;
                 size++;
             }
+
         }
 
         T remove()
         {
-            if(currNode == tail )
-            {
-                throw InvalidPositionException();
+            if(currNode >= tail){
 
+                throw InvalidPositionException();
             }
+            ListNode<T> *tmp_node = currNode;
 
             T temp = currNode->data;
             currNode->prev->next = currNode->next;
             currNode->next->prev = currNode->prev;
 
-            ListNode<T> *tmp_node = currNode;
+
             currNode = currNode->next;
             delete tmp_node;
             size--;
@@ -98,40 +102,14 @@ class DoublyLinkedList {
 
         void move_to_start()
         {
-
                 currNode = head->next;
                 currentPosition = 0;
-
-        /*
-
-                currentPosition--;
-                currNode = currNode->prev;
-        */
-
-
         }
 
         void move_to_end()
         {
-            currentPosition++;
-            currNode = currNode -> next;
-              /*  currNode = tail;
-                currentPosition = size;
-
-        /*
-            if(currentPosition >= size)
-            {
                 currNode = tail;
                 currentPosition = size;
-            }
-            else
-            {
-
-                currentPosition++;
-                currNode = currNode->next;
-        }
-
-    */
         }
 
         void prev()
@@ -186,29 +164,35 @@ class DoublyLinkedList {
 
             else if (pos  < currentPosition)
             {
-                currNode = head->next;
-                currentPosition = 0;
-                move_to_end();
+                    currNode = head -> next;
+                    currentPosition = 0;
+                    for(int i = 0; i < pos; i++)
+                    {
+                        currentPosition++;
+                        currNode = currNode -> next;
+                    }
             }
             else
             {
                     currNode = tail;
                     currentPosition = size;
-                    size - pos;
-                    move_to_start();
+                    for(int i = 0; i < pos; i++)
+                    {
+                        currNode = head->next;
+                        currentPosition--;
+                    }
             }
 
         }
 
-
         const T& get_value() const
         {
-            if(currentPosition > size || currentPosition <= 0)
+            if(currentPosition > size && currentPosition < 0)
             {
                 throw InvalidPositionException();
             }
 
-            return currNode -> data;
+            return currNode->data;
         }
 
 
@@ -216,7 +200,7 @@ class DoublyLinkedList {
         {
             for(ListNode<T> *node = lis.head->next; node!= lis.tail; node = node->next)
             {
-                out << node->data<< " ";
+                out << node->data << " ";
             }
 
             return out;

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1518026825 source:c:\users\hartmann14\downloads\v3_doublylinkedlist\v3_doublylinkedlist\doublylinked-hartmann14(1.0)\main.cpp
+	<iostream>
+	"doublylinkedlist.h"
+
+1518027760 c:\users\hartmann14\downloads\v3_doublylinkedlist\v3_doublylinkedlist\doublylinked-hartmann14(1.0)\doublylinkedlist.h
+	<iostream>
+	"listnode.h"
+
+1516884370 c:\users\hartmann14\downloads\v3_doublylinkedlist\v3_doublylinkedlist\doublylinked-hartmann14(1.0)\listnode.h
+
